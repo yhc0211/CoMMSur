@@ -1,7 +1,7 @@
 # CoMMSur
 
 CoMM-Surv (Configuration-based Mediation Model for Survival Outcomes) is a Bayesian framework for mediation analysis with right-censored survival data and multiple mediators.
-The model jointly characterizes the exposure–mediator and mediator–outcome pathways within a unified probabilistic framework. For each mediator, the corresponding pathway effects are assigned to one of three states—negative, null, or positive—resulting in nine latent configurations that define a structured prior on the pair of regression coefficients. This configuration-based formulation enables flexible modeling of heterogeneous mediation patterns while borrowing information across mediators.
+The model jointly characterizes the exposure–mediator and mediator–outcome pathways within a unified probabilistic framework. For each mediator, the corresponding pathway effects are assigned to one of three states—negative, null, or positive—resulting in nine latent configurations that define a structured prior on the pair of regression coefficients. This configuration-based formulation enables flexible modeling of heterogeneous mediation patterns.
 Posterior probabilities derived from the model quantify the evidence that a mediator belongs to one of the non-null configurations corresponding to an active mediation pathway. These probabilities provide a principled basis for identifying mediators that transmit the exposure effect to survival outcomes.
 
 The model is implemented in **Stan** .
