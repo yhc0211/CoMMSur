@@ -1,10 +1,8 @@
 # CoMMSur
 
-
-**CoMMSur** implements **CoMM-Surv**, a Bayesian survival mediation framework for identifying mediators between an exposure and a time-to-event outcome.
-
-The method jointly models exposure–mediator and mediator–outcome pathways using a **configuration-based prior**. By placing a structured prior on the pair of coefficients corresponding to the exposure–mediator and mediator–outcome effects, CoMMSur estimates the posterior probability that each mediator is actively involved in the mediation pathway.
-
+CoMM-Surv (Configuration-based Mediation Model for Survival Outcomes) is a Bayesian framework for mediation analysis with right-censored survival data and multiple mediators.
+The model jointly characterizes the exposure–mediator and mediator–outcome pathways within a unified probabilistic framework. For each mediator, the corresponding pathway effects are assigned to one of three states—negative, null, or positive—resulting in nine latent configurations that define a structured prior on the pair of regression coefficients. This configuration-based formulation enables flexible modeling of heterogeneous mediation patterns while borrowing information across mediators.
+Posterior probabilities derived from the model quantify the evidence that a mediator belongs to one of the non-null configurations corresponding to an active mediation pathway. These probabilities provide a principled basis for identifying mediators that transmit the exposure effect to survival outcomes.
 
 The model is implemented in **Stan** .
 
