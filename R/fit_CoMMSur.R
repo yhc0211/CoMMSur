@@ -73,6 +73,7 @@ fit_CoMMSur <- function(X, M, time, event,
     iter = iter,
     warmup = warmup,
     seed = seed,
+    control = list(adapt_delta = 0.95, max_treedepth = 15),
     ...
   )
 
