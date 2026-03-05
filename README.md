@@ -14,11 +14,9 @@ The model is implemented in **Stan** .
 install.packages("remotes")
 remotes::install_github("yhc0211/CoMMSur")
 
-## Simulation example
+## Simulation example (N = 50, K = 3).
 
-The following example simulates a small dataset (N = 50, K = 3) and fits the model.
 
-```r
 set.seed(123)
 
 N <- 50
