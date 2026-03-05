@@ -18,7 +18,7 @@
 #' @export
 fit_CoMMSur <- function(X, M, time, event,
                         mediator_names = NULL,
-                        chains = 4, iter = 2000, warmup = floor(iter/2),
+                        chains = 4, iter = 8000, warmup = floor(iter/2),
                         seed = 1, ...) {
 
   if (!requireNamespace("rstan", quietly = TRUE)) {
@@ -73,7 +73,7 @@ fit_CoMMSur <- function(X, M, time, event,
     iter = iter,
     warmup = warmup,
     seed = seed,
-    control = list(adapt_delta = 0.95, max_treedepth = 15),
+    control = list(adapt_delta = 0.99, max_treedepth = 18),
     ...
   )
 
