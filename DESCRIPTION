@@ -1,11 +1,11 @@
 Package: CoMMSur
 Type: Package
-Title: CoMM-Surv: Bayesian Survival Mediation with Configuration-Based Spike-and-Slab
+Title: CoMM-Surv: Bayesian Survival Mediation with Configuration-Based Prior
 Version: 0.1.1
 Authors@R: c(
-    person("Yung-Han", "Chang", role = c("aut","cre"), email = "your@email.com")
+    person("Yung-Han", "Chang", role = c("aut","cre"), email = "YChang11@mdanderson.org")
   )
-Description: Fit a Bayesian survival mediation model with multiple mediators and right-censored time-to-event outcome using a configuration-based joint spike-and-slab prior. Provides mediator-level posterior probabilities for the null/alternative hypothesis and each of the 9 joint configuration components.
+Description: Fit a Bayesian survival mediation model with multiple mediators and right-censored time-to-event outcome using a configuration-based joint prior. Provides mediator-level posterior probabilities for the null/alternative hypothesis and each of the 9 joint configuration components.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
